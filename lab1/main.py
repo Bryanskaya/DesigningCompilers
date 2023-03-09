@@ -4,9 +4,8 @@ from preprocessing.RegexParser import RegexParser
 
 def main():
     #regexStr = input("Введите регулярное выражение: ")
-    regex = "(a|b)*"
-    data = "aaaabc"
-    RegexParser().parseExpression(regex)
+    regex = "ab*|c"
+    data = "abbbb"
     dfa = DFA.createMinDFA(regex)
 
     dfa.accept(data)

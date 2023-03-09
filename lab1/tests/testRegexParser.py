@@ -292,7 +292,7 @@ class testRegexParser(unittest.TestCase):
 
         self.assertEqual(True, self.isEqualTrees(resTree, goalTree))
 
-    def test_parseBracketsMilt_Star(self):
+    def test_parseBracketsMult_Star(self):
         regex = "(ab)*"
         resTree = RegexParser().parseExpression(regex)
         goalTree = [("LL", "a"), ("L", "•"), ("LR", "b"),
