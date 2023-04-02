@@ -1,0 +1,92 @@
+{
+    "grammar": {
+      "-name": "G0",
+      "terminalsymbols": [
+          {
+            "-name": "a",
+            "-spell": "a"
+          },
+          {
+            "-name": "b",
+            "-spell": "b"
+          },
+          {
+            "-name": "c",
+            "-spell": "c"
+          },
+          {
+            "-name": "d",
+            "-spell": "d"
+          },
+          {
+            "-name": "+",
+            "-spell": "+"
+          },
+          {
+            "-name": "*",
+            "-spell": "*"
+          },
+          {
+            "-name": "(",
+            "-spell": "("
+          },
+          {
+            "-name": ")",
+            "-spell": ")"
+          }
+        ],
+      "nonterminalsymbols": [ "S", "A" ],
+      "productions": [
+          {
+            "lhs": "S",
+            "rhs": [
+                {
+                  "-type": "nonterm",
+                  "-name": "A"
+                },
+                {
+                  "-type": "term",
+                  "-name": "a"
+                }
+              ]
+          },
+          {
+            "lhs": "S",
+            "rhs": [
+                {
+                  "-type": "term",
+                  "-name": "b"
+                }
+              ]
+          },
+          {
+            "lhs": "A",
+            "rhs": [
+                {
+                  "-type": "nonterm",
+                  "-name": "A"
+                },
+                {
+                  "-type": "term",
+                  "-name": "c"
+                }
+              ]
+          },
+          {
+            "lhs": "A",
+            "rhs": [
+                {
+                  "-type": "nonterm",
+                  "-name": "S"
+                },
+                {
+                  "-type": "term",
+                  "-name": "d"
+                }
+              ]
+          }
+        ],
+      "startsymbol": "S"
+    }
+  }
+  

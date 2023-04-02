@@ -1,0 +1,1 @@
+{"grammar":{"-name":"G0","terminalsymbols":[{"-type":null,"-spell":"a","-name":"a"}],"nonterminalsymbols":["S"],"productions":[{"lhs":"S","rhs":[{"-type":"term","-spell":null,"-name":"a"}]}],"startsymbol":"S"}}
